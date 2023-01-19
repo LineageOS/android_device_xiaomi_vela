@@ -22,7 +22,7 @@ fi
 
 set -e
 
-export DEVICE=pyxis
+export DEVICE=vela
 export DEVICE_COMMON=sdm710-common
 export VENDOR=xiaomi
 

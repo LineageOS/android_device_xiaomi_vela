@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -52,4 +52,4 @@ PRODUCT_PACKAGES += \
     TargetWifiOverlay
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/pyxis/pyxis-vendor.mk)
+$(call inherit-product, vendor/xiaomi/vela/vela-vendor.mk)
