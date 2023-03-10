@@ -1,0 +1,3 @@
+# Meitu
+persist.meitu.	u:object_r:vendor_meitu_prop:s0
+sys.meitu.	u:object_r:vendor_meitu_prop:s0

@@ -1,0 +1,3 @@
+# Allow to access Meitu props
+get_prop(hal_camera_default, vendor_meitu_prop)
+set_prop(hal_camera_default, vendor_meitu_prop)
