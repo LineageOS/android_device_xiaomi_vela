@@ -12,6 +12,11 @@ function blob_fixup() {
             ${PATCHELF} --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
             ;;
     esac
+
+    # For all ELF files
+    if [[ "${1}" =~ ^.*(\.so|\/bin\/.*)$ ]]; then
+        "${PATCHELF_0_17_2}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+    fi
 }
 
 # If we're being sourced by the common script that we called,
