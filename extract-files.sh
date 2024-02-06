@@ -11,6 +11,31 @@ function blob_fixup() {
 	vendor/lib/libswregistrationalgo.so)
             ${PATCHELF} --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
             ;;
+        vendor/lib/libBlendScreen.so \
+        | vendor/lib/libGetExposureValue.so \
+        | vendor/lib/libHDRI.so \
+        | vendor/lib/libManis.so \
+        | vendor/lib/libmeitucapture.so \
+        | vendor/lib/libMeituColorSystem3DLut.so \
+        | vendor/lib/libMeituColorSystem.so \
+        | vendor/lib/libMeituDeBlur.so \
+        | vendor/lib/libMeituDefocus.so \
+        | vendor/lib/libmlabmakeup.so \
+        | vendor/lib/libmtbodycontour.so \
+        | vendor/lib/libMTChromaNR.so \
+        | vendor/lib/libmtCLUtil.so \
+        | vendor/lib/libmtColorNoiseFilter.so \
+        | vendor/lib/libmtface.so \
+        | vendor/lib/libmtmakeupInterface.so \
+        | vendor/lib/libmtMultiFrameDenoise.so \
+        | vendor/lib/libmtnn.so \
+        | vendor/lib/libmtphotosegment.so \
+        | vendor/lib/libMTSkin.so \
+        | vendor/lib/libmtvenom.so \
+        | vendor/lib/liborb.so \
+        | vendor/lib/libPathBlur.so)
+            "${PATCHELF_0_17_2}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            ;;
     esac
 }
 
