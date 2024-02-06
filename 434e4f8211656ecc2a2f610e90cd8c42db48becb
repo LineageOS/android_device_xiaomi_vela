@@ -16,6 +16,24 @@
       "message": "Considering we won\u0027t get no more updates, please just use I478eb89aa2ac106d855b168844863032612bc8e8",
       "revId": "434e4f8211656ecc2a2f610e90cd8c42db48becb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0a81fe2_1214ecfd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-02-06T11:51:42Z",
+      "side": 1,
+      "message": "ig you meant to hardcode the list of blobs that needs to be patched... sure\n\nthough lmao the first I478eb89aa2ac106d855b168844863032612bc8e8 was made by me and I used that regex there",
+      "parentUuid": "225bd835_f9c3247a",
+      "revId": "434e4f8211656ecc2a2f610e90cd8c42db48becb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
