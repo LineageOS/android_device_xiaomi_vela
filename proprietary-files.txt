@@ -30,20 +30,6 @@ vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib/rfsa/adsp/tas2560_TI_0.bin
 
-# Audio hardware
-vendor/lib/hw/audio.primary.sdm710.so
-vendor/lib/vndk/libxlog.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libadm.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioroute_ext.so
-vendor/lib/libhdmiedid.so
-vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
-vendor/lib/libssrec.so
-
 # Camera - from vela
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/golden_rear_dc_cal_wt.bin
