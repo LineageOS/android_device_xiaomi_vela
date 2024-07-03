@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f2e7b4d2_5fbe9206",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-07-03T17:01:37Z",
+      "side": 1,
+      "message": "Rear cameras:\n- Main: id\u003d0\n- Ultrawide: id\u003d21\n- Depth: id\u003d20",
+      "revId": "48141a099022756211c7ad22d19f797e31fd91f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
