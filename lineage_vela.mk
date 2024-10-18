@@ -23,6 +23,5 @@ PRODUCT_MODEL := MI CC 9 Meitu Edition
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vela-user 11 RKQ1.200826.002 V12.5.5.0.RFECNXM release-keys"
-
-BUILD_FINGERPRINT := Meitu/vela/vela:11/RKQ1.200826.002/V12.5.5.0.RFECNXM:user/release-keys
+    BuildDesc="vela-user 11 RKQ1.200826.002 V12.5.5.0.RFECNXM release-keys" \
+    BuildFingerprint=Meitu/vela/vela:11/RKQ1.200826.002/V12.5.5.0.RFECNXM:user/release-keys
