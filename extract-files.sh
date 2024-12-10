@@ -1,14 +1,14 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
-#
+# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
 function blob_fixup() {
     case "${1}" in
         vendor/lib/libswregistrationalgo.so)
+            [ "$2" = "" ] && return 0
             ${PATCHELF} --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
             ;;
         vendor/lib/libBlendScreen.so \
@@ -34,9 +34,19 @@ function blob_fixup() {
         | vendor/lib/libmtvenom.so \
         | vendor/lib/liborb.so \
         | vendor/lib/libPathBlur.so)
+            [ "$2" = "" ] && return 0
             "${PATCHELF_0_17_2}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
+        *)
+            return 1
+            ;;
     esac
+
+    return 0
+}
+
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
 }
 
 # If we're being sourced by the common script that we called,
@@ -50,5 +60,6 @@ set -e
 export DEVICE=vela
 export DEVICE_COMMON=sdm710-common
 export VENDOR=xiaomi
+export VENDOR_COMMON=${VENDOR}
 
-"./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
+"./../../${VENDOR_COMMON}/${DEVICE_COMMON}/extract-files.sh" "$@"
