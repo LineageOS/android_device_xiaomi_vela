@@ -53,7 +53,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # VNDK
 PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v29/arm/arch-arm-armv7-a-neon/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-v29.so \
     prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.memory.block@1.0.so
 
 # WiFi
