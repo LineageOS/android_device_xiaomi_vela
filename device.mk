@@ -29,6 +29,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hidl.memory@1.0.vendor \
     libutilscallstack.vendor:32
 
 # Overlays
@@ -50,10 +51,6 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# VNDK
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.memory.block@1.0.so
 
 # WiFi
 PRODUCT_PACKAGES += \
