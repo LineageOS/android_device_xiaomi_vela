@@ -2105,21 +2105,6 @@ vendor/etc/camera_material/selfiepano/9.png
 vendor/etc/camera_material/selfiepano/ic_left.png
 vendor/etc/camera_material/selfiepano/ic_right.png
 
-# Camera (provider) - from vela
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib/android.hardware.camera.provider@2.4-external.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-external-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib/camera.device@3.5-external-impl.so
-vendor/lib/camera.device@3.5-impl.so
-vendor/lib/camera.device@3.6-external-impl.so
-vendor/lib/vendor.qti.hardware.camera.device@2.0.so
-vendor/lib/vendor.qti.hardware.camera.device@3.5.so
-
 # Display calibration - from vela
 vendor/etc/dsi_ss_ea8076_fhd_cmd_display_f3m_mi.xml
 
