@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022-2023 The LineageOS Project
+# Copyright (C) 2022-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -31,6 +31,8 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hidl.memory@1.0.vendor \
     libutilscallstack.vendor:32
+
+$(call soong_config_set,camera,override_format_from_reserved,true)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
