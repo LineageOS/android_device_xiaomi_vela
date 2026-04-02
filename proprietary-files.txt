@@ -47,7 +47,6 @@ vendor/lib/libssrec.so
 # Camera - from vela
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/golden_rear_dc_cal_wt.bin
-vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/org.quic.camera.debugdata.DebugDataAWB
 vendor/etc/camera/vidhance_calibration
 vendor/lib/camera/components/com.meitu.node.mtBeauty.so
